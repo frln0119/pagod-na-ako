@@ -4,9 +4,9 @@ import java.awt.event.*;
 
 // DashBoard //
 public class dashBoard extends JFrame {
-  public void userDashboard() {
+	public void userDashboard() {
 		JButton patient = new JButton("JButton");
-    patient.addActionListener(new ActionListener() {
+		patient.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				patient.main(null);
@@ -20,7 +20,7 @@ public class dashBoard extends JFrame {
 			}
 		});
 		JButton branches = new JButton("Branches");
-    branches.addActionListener(new ActionListener() {
+		branches.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("Branches");
@@ -34,44 +34,43 @@ public class dashBoard extends JFrame {
 				System.out.println("Medicine");
 			}
 		});
-    JButton appointment = new JButton("Appointment");
-    appointment.addActionListener(new ActionListener() {
+	Button appointment = new JButton("Appointment");
+	appointment.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("Appointment");
+				appointment.main(null);
 			}
 		});
 
-    JButton supplies = new JButton("Supplies");
+     JButton supplies = new JButton("Supplies");
 		supplies.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("Supplies");
 			}
 		});
-    JButton equipment = new JButton("Equipment");
+     JButton equipment = new JButton("Equipment");
 		equipment.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("Equipment");
+				equipment.main(null);
 			}
 		});
-    JButton exit = new JButton("Close");
-    exit.addActionListener(new ActionListener() {
+     JButton exit = new JButton("Close");
+     exit.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.exit(1);
 			}
 		});
-    add(patient);
-		add(exit);
-    add(equipment);
-    add(supplies);
-    add(appointment);
-    add(medicine);
-		add(branches);
-    add(labs);
-    setSize(1000, 1000);
+     add(patient);
+	add(exit);
+     add(equipment);
+     add(supplies);
+     add(appointment);
+	add(branches);
+     add(labs);
+     setSize(1000, 1000);
 		setVisible(true);
 		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		setLayout(null);

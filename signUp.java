@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class signUp extends JFrame {
 
-  public void signUpInterface() {
+public void signUpInterface() {
 		JTextField desiredUser = new JTextField("Username");
     desiredUser.setForeground(Color.GRAY);
     desiredUser.addFocusListener(new FocusListener() {
@@ -49,18 +49,18 @@ public class signUp extends JFrame {
 			@Override
 			public void focusGained(FocusEvent e) {
 				if (passwordAgain.getText().equals("Confirm Password")) {
-            passwordAgain.setText("");
-            passwordAgain.setForeground(Color.BLACK);
-			  }
+			passwordAgain.setText("");
+			passwordAgain.setForeground(Color.BLACK);
 			}
-      @Override
-			public void focusLost(FocusEvent e) {
-				if (passwordAgain.getText().isEmpty()) {
-            passwordAgain.setForeground(Color.GRAY);
-            passwordAgain.setText("Confirm Password");
+			}
+		@Override
+				public void focusLost(FocusEvent e) {
+					if (passwordAgain.getText().isEmpty()) {
+			passwordAgain.setForeground(Color.GRAY);
+			passwordAgain.setText("Confirm Password");
+					}
 				}
-			}
-		});
+			});
 
 
 	  JButton signUp = new JButton("Sign Up");

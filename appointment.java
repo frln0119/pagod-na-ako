@@ -7,80 +7,80 @@ public class appointment extends JFrame {
 	public void setAppointment() {
 		JTextField hour = new JTextField("Hour");
 		hour.setForeground(Color.GRAY);
-    hour.addFocusListener(new FocusListener() {
+     hour.addFocusListener(new FocusListener() {
 			@Override
 			public void focusGained(FocusEvent e) {
 				if (hour.getText().equals("Hour")) {
-            hour.setText("");
-            hour.setForeground(Color.BLACK);
-			  }
+				hour.setText("");
+          	hour.setForeground(Color.BLACK);
+	          }
 			}
-      @Override
-			public void focusLost(FocusEvent e) {
-				if (hour.getText().isEmpty()) {
-            hour.setForeground(Color.GRAY);
-            hour.setText("Hour");
+		@Override
+				public void focusLost(FocusEvent e) {
+					if (hour.getText().isEmpty()) {
+			hour.setForeground(Color.GRAY);
+			hour.setText("Hour");
+					}
 				}
-			}
-		});
+			});
 		// setbounds here for hour...
 		JTextField minutes = new JTextField("Minutes");
-    minutes.setForeground(Color.GRAY);
-    minutes.addFocusListener(new FocusListener() {
+		minutes.setForeground(Color.GRAY);
+		minutes.addFocusListener(new FocusListener() {
 			@Override
 			public void focusGained(FocusEvent e) {
 				if (minutes.getText().equals("Minutes")) {
-            minutes.setText("");
-            minutes.setForeground(Color.BLACK);
-			  }
-			}
-      @Override
-			public void focusLost(FocusEvent e) {
-				if (minutes.getText().isEmpty()) {
-            minutes.setForeground(Color.GRAY);
-            minutes.setText("Hour");
+				minutes.setText("");
+				minutes.setForeground(Color.BLACK);
 				}
 			}
-		});
-		// setbounds here for minutes...
+			@Override
+					public void focusLost(FocusEvent e) {
+						if (minutes.getText().isEmpty()) {
+				minutes.setForeground(Color.GRAY);
+				minutes.setText("Hour");
+						}
+					}
+				});
+				// setbounds here for minutes...
 		JTextField pmOrAm = new JTextField("PM/AM");
-    pmOrAm.setForeground(Color.GRAY);
-    pmOrAm.addFocusListener(new FocusListener() {
+		pmOrAm.setForeground(Color.GRAY);
+		pmOrAm.addFocusListener(new FocusListener() {
 			@Override
 			public void focusGained(FocusEvent e) {
 				if (pmOrAm.getText().equals("PM/AM")) {
-            pmOrAm.setText("");
-            pmOrAm.setForeground(Color.BLACK);
-			  }
-			}
-      @Override
-			public void focusLost(FocusEvent e) {
-				if (pmOrAm.getText().isEmpty()) {
-            pmOrAm.setForeground(Color.GRAY);
-            pmOrAm.setText("PM/AM");
+			pmOrAm.setText("");
+			pmOrAm.setForeground(Color.BLACK);
 				}
 			}
-		});
+			@Override
+					public void focusLost(FocusEvent e) {
+						if (pmOrAm.getText().isEmpty()) {
+				pmOrAm.setForeground(Color.GRAY);
+				pmOrAm.setText("PM/AM");
+						}
+					}
+				});
 
 		// setbounds here for pm or am...
 		JTextField date = new JTextField("MM/DD/YYYY");
 		date.setForeground(Color.GRAY);
-    date.addFocusListener(new FocusListener() {
+		date.addFocusListener(new FocusListener() {
 			@Override
 			public void focusGained(FocusEvent e) {
 				if (date.getText().equals("MM/DD/YYYY")) {
-            date.setText("");
-            date.setForeground(Color.BLACK);
-			  }
-			}
-      @Override
-			public void focusLost(FocusEvent e) {
-				if (date.getText().isEmpty()) {
-            date.setForeground(Color.GRAY);
-            date.setText("MM/DD/YYYY");
+               date.setText("");
+          	date.setForeground(Color.BLACK);
 				}
 			}
-		});
+			@Override
+					public void focusLost(FocusEvent e) {
+						if (date.getText().isEmpty()) {
+				date.setForeground(Color.GRAY);
+				date.setText("MM/DD/YYYY");
+						}
+					}
+				});
 		// setbounds here for date...
 		JButton submit = new JButton("Submit");
 		// setbounds here for submit...

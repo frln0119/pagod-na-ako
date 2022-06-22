@@ -4,7 +4,7 @@ import java.awt.event.*;
 
 public class appointConF extends JFrame {
 
-  public void appointConfDialog() {
+     public void appointConfDialog() {
 		JLabel confirmation = new JLabel("Your Appointment Has Been Processed!");
 		// set Bounds here....
 		

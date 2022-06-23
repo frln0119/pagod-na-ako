@@ -49,13 +49,6 @@ public class dashBoard extends JFrame {
 				System.out.println("Supplies");
 			}
 		});
-     JButton equipment = new JButton("Equipment");
-		equipment.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				equipment.main(null);
-			}
-		});
      JButton exit = new JButton("Close");
      exit.addActionListener(new ActionListener() {
 			@Override
@@ -66,7 +59,6 @@ public class dashBoard extends JFrame {
      add(patient);
 	add(exit);
      add(equipment);
-     add(supplies);
      add(appointment);
 	add(branches);
      add(labs);

@@ -48,7 +48,6 @@ Font googleSans = new Font("Google-Sans", Font.PLAIN, 20);
 	
   public static void main(String[] args) {
     Main Main = new Main();
-
 		Main.logInFrame();
   }
 }

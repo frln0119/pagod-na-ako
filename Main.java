@@ -5,14 +5,6 @@ import java.awt.GraphicsEnvironment.*;
 
 public class Main extends JFrame {
 	public void logInFrame() {
-
-    Font googleFont = Font.createFont(Font.TRUETYPE_FONT, new File("GoogleSans-Medium.ttf"));
-
-    GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-ge.registerFont(googleFont);
-
-Font googleSans = new Font("Google-Sans", Font.PLAIN, 20);
-		
     JTextField userField = new JTextField();
 		JTextField pwField = new JTextField();
     JButton logInBTN = new JButton("Login");

@@ -4,10 +4,6 @@ import javax.swing.*;
 import java.util.Random;
 
 public class equipmentSupplies extends JFrame {
-	   Font font = Font.createFont(Font.TRUETYPE_FONT, getClass().getResource("/GoogleSans-Medium.ttf").openStream());
-     GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-ge.registerFont(font);
-     font = font.deriveFont(24f);
      Random rndm = new Random();
      int stretchersCount = rndm.nextInt(100);
 	   int defibrillatorsCount = rndm.nextInt(10);

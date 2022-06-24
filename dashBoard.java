@@ -34,19 +34,19 @@ public class dashBoard extends JFrame {
 				System.out.println("Medicine");
 			}
 		});
-	Button appointment = new JButton("Appointment");
-	appointment.addActionListener(new ActionListener() {
+	JButton appointment = new JButton("Supplies");
+		appointment.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				appointment.main(null);
 			}
 		});
 
-     JButton supplies = new JButton("Supplies");
-		supplies.addActionListener(new ActionListener() {
+     JButton suppliesAndEquipment = new JButton("Supplies");
+		suppliesAndEquipment.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("Supplies");
+				equipmentSupplies.main(null);
 			}
 		});
      JButton exit = new JButton("Close");
@@ -58,7 +58,7 @@ public class dashBoard extends JFrame {
 		});
      add(patient);
 	add(exit);
-     add(equipment);
+     add(suppliesAndEquipment);
      add(appointment);
 	add(branches);
      add(labs);

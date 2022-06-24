@@ -34,7 +34,7 @@ public class dashBoard extends JFrame {
 				System.out.println("Medicine");
 			}
 		});
-	JButton appointment = new JButton("Supplies");
+		JButton appointment = new JButton("Supplies");
 		appointment.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -42,27 +42,27 @@ public class dashBoard extends JFrame {
 			}
 		});
 
-     JButton suppliesAndEquipment = new JButton("Supplies");
+  	JButton suppliesAndEquipment = new JButton("Supplies");
 		suppliesAndEquipment.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				equipmentSupplies.main(null);
 			}
 		});
-     JButton exit = new JButton("Close");
-     exit.addActionListener(new ActionListener() {
+    JButton exit = new JButton("Close");
+    exit.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.exit(1);
 			}
 		});
-     add(patient);
-	add(exit);
-     add(suppliesAndEquipment);
-     add(appointment);
-	add(branches);
-     add(labs);
-     setSize(1000, 1000);
+    add(patient);
+		add(exit);
+    add(suppliesAndEquipment);
+    add(appointment);
+		add(branches);
+    add(labs);
+    setSize(1000, 1000);
 		setVisible(true);
 		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		setLayout(null);

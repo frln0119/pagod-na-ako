@@ -120,7 +120,7 @@ public class prototyp extends JFrame {
 		});
 
 		JButton submit =new JButton("Submit");
-		submit.setBounds(0, 0, 0, 0,);
+		submit.setBounds(0, 0, 0, 0);
 		submit.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {

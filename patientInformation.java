@@ -123,7 +123,10 @@ public class patientInformation extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				if (emailField.getText().isEmpty()) {
-					notMatch.main(null);
+					submit.setEnabled(false);
+				}
+				else if {
+					submit.setEnabled(true);
 				}
 			}
 		});
